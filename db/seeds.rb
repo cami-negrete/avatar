@@ -8,6 +8,6 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 10.times do |i|
-    Image.create(url_image:
-   Faker::Avatar.image)
+    @avatars = Image.create(url_image: Faker::Avatar.image)
+    print @avatars
 end
